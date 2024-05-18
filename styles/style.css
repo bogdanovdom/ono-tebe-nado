@@ -1,15 +1,19 @@
 .header {
-  display: flex;
-  flex-flow: row nowrap;
+  display: grid;
+  grid-template-columns: repeat(32, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  justify-items: center;
   align-items: center;
-  justify-content: space-around;
-  padding: 92px 24px 96px;
+  padding: 92px 50px 92px;
   background-color: #fff;
 }
 
 /*контейнер навигации*/
 .header__menu {
-  display: flex;
+  grid-area: 1 / 1 / 2 / 14;
+  justify-self: start;
 }
 
 /*список ссылок*/
@@ -47,6 +51,7 @@
 
 /*контейнер логотипа*/
 .header__logo {
+  grid-area: 1 / 14 / 2 / 20;
 }
 
 /*картинка с логотипом*/
@@ -55,22 +60,32 @@
   height: 105px;
 }
 
-/*выравнивание блока с адресом*/
+/*выравнивание блока с адресом
 .header__address {
 }
+*/
 
 /*контейнер с адресом*/
 .address {
+  grid-area: 1 / 20 / 2 / 33;
+  justify-self: end;
+  margin-right: 34px;
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 0.01em;
+  line-height: 1.4em;
   color: #000;
 }
 
 .contacts {
-  text-decoration: none; /* Убираем стандартное подчеркивание */
-  border-bottom: 1px solid black; /* Добавляем нижнюю границу для подчеркивания */
-  padding-bottom: 0.01em; /* Смещаем подчеркивание вниз */
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  padding-bottom: 0.01em;
+}
+
+.addres-city {
+  letter-spacing: 0em;
+  width: 205px;
 }
 
 .cover {
