@@ -1,28 +1,26 @@
 .header {
   display: grid;
-  grid-template-columns: repeat(32, 1fr);
+  grid-template-columns: 2fr 1fr 2fr;
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   justify-items: center;
   align-items: center;
-  padding: 92px 50px 92px;
+  padding: 92px 45px;
   background-color: #fff;
 }
 
 /*контейнер навигации*/
 .header__menu {
-  grid-area: 1 / 1 / 2 / 14;
-  justify-self: start;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: #000;
 }
 
 /*список ссылок*/
 .header__links-list {
   display: flex;
-  font-size: 18px;
-  font-weight: 400;
-  letter-spacing: 0.01em;
-  color: #000;
   list-style-type: circle;
 }
 
@@ -49,43 +47,33 @@
   text-decoration: none;
 }
 
-/*контейнер логотипа*/
-.header__logo {
-  grid-area: 1 / 14 / 2 / 20;
-}
-
-/*картинка с логотипом*/
-.header__logo-image {
+/*логотип*/
+.logo-black {
   width: 148px;
   height: 105px;
 }
 
-/*выравнивание блока с адресом
-.header__address {
-}
-*/
-
 /*контейнер с адресом*/
 .address {
-  grid-area: 1 / 20 / 2 / 33;
-  justify-self: end;
-  margin-right: 34px;
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 0.01em;
   line-height: 1.4em;
   color: #000;
+  justify-self: end;
+  margin-right: 40px;
+  width: 205px;
 }
 
-.contacts {
+.header__contacts {
   text-decoration: none;
   border-bottom: 1px solid black;
   padding-bottom: 0.01em;
 }
 
-.addres-city {
+/*выравнивание блока с адресом*/
+.header__address {
   letter-spacing: 0em;
-  width: 205px;
 }
 
 .cover {
