@@ -6,8 +6,16 @@
 
 body {
   width: 1100px;
+
+  /*удалить*/
+  background-color: bisque;
+
   margin: 0 auto;
   font-family: Raleway, sans-serif;
+}
+
+address {
+  font-style: normal;
 }
 
 h1,

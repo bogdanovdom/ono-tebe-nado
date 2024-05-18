@@ -1,1 +1,102 @@
-/* место для вашего кода */
+.header {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 92px 24px 96px;
+  background-color: #fff;
+}
+
+/*контейнер навигации*/
+.header__menu {
+  display: flex;
+}
+
+/*список ссылок*/
+.header__links-list {
+  display: flex;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: #000;
+  list-style-type: circle;
+}
+
+/*пункт списка ссылок*/
+.header__links-list-item {
+  margin-left: 32px;
+}
+
+/*ссылка без кружочка перед ней*/
+.header__links-list-item_no-bullit {
+  list-style-type: none;
+  letter-spacing: normal;
+}
+
+/*ссылка*/
+.header__link {
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  padding-bottom: 0.01em;
+}
+
+/*активная ссылка*/
+.header__link_active {
+  text-decoration: none;
+}
+
+/*контейнер логотипа*/
+.header__logo {
+}
+
+/*картинка с логотипом*/
+.header__logo-image {
+  width: 148px;
+  height: 105px;
+}
+
+/*выравнивание блока с адресом*/
+.header__address {
+}
+
+/*контейнер с адресом*/
+.address {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: #000;
+}
+
+.contacts {
+  text-decoration: none; /* Убираем стандартное подчеркивание */
+  border-bottom: 1px solid black; /* Добавляем нижнюю границу для подчеркивания */
+  padding-bottom: 0.01em; /* Смещаем подчеркивание вниз */
+}
+
+.cover {
+  width: 100%;
+  height: 757px;
+  background-color: rgb(158, 117, 62);
+  margin-bottom: 179px;
+}
+
+.lots {
+  padding: 0px 24px;
+  background-color: rgb(38, 38, 134);
+  height: 692px;
+  margin-bottom: 146px;
+}
+
+.about {
+  padding: 0px 24px;
+  background-color: rgb(104, 38, 134);
+  height: 595px;
+  margin-bottom: 180px;
+}
+
+.footer {
+  padding: 0px 50px;
+  background-color: rgb(141, 69, 21);
+  height: 98px;
+  margin-bottom: 88px;
+}
