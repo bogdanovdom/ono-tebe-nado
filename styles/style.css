@@ -38,14 +38,14 @@
   letter-spacing: normal;
 }
 
-.header__link_active {
-  text-decoration: none;
-}
-
 .header__link {
   text-decoration: none;
   border-bottom: 1px solid black;
   padding-bottom: 0.01em;
+}
+
+.header__link_active {
+  border-bottom: 0
 }
 
 .header__logo {
@@ -68,12 +68,12 @@
   width: 230px;
 }
 
-.header__contacts {
+.contacts {
   text-decoration: none;
   border-bottom: 1px solid black;
 }
 
-.header__address {
+.address-city {
   letter-spacing: 0;
 }
 
@@ -149,10 +149,13 @@
   width: 256px;
   height: 51px;
   background-color: transparent;
-  border: 1px solid #fff;
-  color: #fff;
-  text-transform: uppercase;
+  border: 1px solid currentColor;
+  font-family: Raleway;
   font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
 }
@@ -190,8 +193,8 @@
 
 .card {
   display: flex;
-  padding: 50px 40px;
-  height: 563px;
+  padding: 49px 40px;
+  min-height: 563px;
   flex-direction: column;
   justify-content: space-between;
   position: relative;
